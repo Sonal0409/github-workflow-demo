@@ -1,5 +1,6 @@
 name: Dependent job execution
-on: workflow_dispatch
+on: 
+ push:
 jobs:
  reviewJob:
   runs-on: ubuntu-latest
