@@ -1,6 +1,8 @@
 name: Dependent job execution
 on: 
  push: 
+  branches:
+   - main
 jobs:
  reviewJob:
   runs-on: ubuntu-latest
