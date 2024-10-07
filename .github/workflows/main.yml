@@ -1,4 +1,4 @@
-name: My first workflow  
+name: My first workflow with multiple Jobs
 on: workflow_dispatch     
 jobs:
  job1:
@@ -8,3 +8,8 @@ jobs:
      run: echo "Hello All"
    - name: Print goodbyee
      run : echo "Bye Bye"
+ job2:
+  runs-on: ubuntu-latest
+  steps:
+   - name: Run a one-line script 
+     run: echo "Hello World"
