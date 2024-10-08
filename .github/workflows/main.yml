@@ -17,6 +17,7 @@ jobs:
       name: myartifact
       path: /tmp/artifact.txt
  downloadArtifactjob:
+  needs: uploadArtifactJob
   runs-on: ubuntu-latest
   steps:
    - name: Download artifact from previous Job
