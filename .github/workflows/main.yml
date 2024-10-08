@@ -2,7 +2,7 @@ name: Upload and download artifact or a file from Runner to github repo and to a
 on: 
  push:
   branches:
-   - master 
+   - main
 jobs:
  uploadArtifactJob:
   runs-on: ubuntu-latest
